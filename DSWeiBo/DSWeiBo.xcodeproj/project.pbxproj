@@ -97,6 +97,7 @@
 		CAA8B2CA1D43600A006587DF /* DSWeiBo */ = {
 			isa = PBXGroup;
 			children = (
+				CAA8B2F91D4367E7006587DF /* Classes */,
 				CAA8B2CB1D43600B006587DF /* AppDelegate.swift */,
 				CAA8B2CD1D43600B006587DF /* ViewController.swift */,
 				CAA8B2CF1D43600B006587DF /* Main.storyboard */,
@@ -123,6 +124,61 @@
 				CAA8B2ED1D43600B006587DF /* Info.plist */,
 			);
 			path = DSWeiBoUITests;
+			sourceTree = "<group>";
+		};
+		CAA8B2F91D4367E7006587DF /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				CAA8B2FA1D4367E7006587DF /* Compose(发微博) */,
+				CAA8B2FB1D4367E7006587DF /* Discover(发现) */,
+				CAA8B2FC1D4367E7006587DF /* Home(首页) */,
+				CAA8B2FD1D4367E7006587DF /* Main(主要) */,
+				CAA8B2FE1D4367E7006587DF /* Message(消息) */,
+				CAA8B2FF1D4367E7006587DF /* Profile(我的) */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		CAA8B2FA1D4367E7006587DF /* Compose(发微博) */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Compose(发微博)";
+			sourceTree = "<group>";
+		};
+		CAA8B2FB1D4367E7006587DF /* Discover(发现) */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Discover(发现)";
+			sourceTree = "<group>";
+		};
+		CAA8B2FC1D4367E7006587DF /* Home(首页) */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Home(首页)";
+			sourceTree = "<group>";
+		};
+		CAA8B2FD1D4367E7006587DF /* Main(主要) */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Main(主要)";
+			sourceTree = "<group>";
+		};
+		CAA8B2FE1D4367E7006587DF /* Message(消息) */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Message(消息)";
+			sourceTree = "<group>";
+		};
+		CAA8B2FF1D4367E7006587DF /* Profile(我的) */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Profile(我的)";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -401,7 +457,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
 				INFOPLIST_FILE = DSWeiBo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = LiuXing.DSWeiBo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -412,7 +470,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
 				INFOPLIST_FILE = DSWeiBo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = LiuXing.DSWeiBo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -484,6 +544,7 @@
 				CAA8B2F21D43600B006587DF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CAA8B2F31D43600B006587DF /* Build configuration list for PBXNativeTarget "DSWeiBoTests" */ = {
 			isa = XCConfigurationList;
@@ -492,6 +553,7 @@
 				CAA8B2F51D43600B006587DF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CAA8B2F61D43600B006587DF /* Build configuration list for PBXNativeTarget "DSWeiBoUITests" */ = {
 			isa = XCConfigurationList;
@@ -500,6 +562,7 @@
 				CAA8B2F81D43600B006587DF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
