@@ -14,6 +14,11 @@
 		CAA8B2D61D43600B006587DF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CAA8B2D41D43600B006587DF /* LaunchScreen.storyboard */; };
 		CAA8B2E11D43600B006587DF /* DSWeiBoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAA8B2E01D43600B006587DF /* DSWeiBoTests.swift */; };
 		CAA8B2EC1D43600B006587DF /* DSWeiBoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAA8B2EB1D43600B006587DF /* DSWeiBoUITests.swift */; };
+		CAA8B3011D436DA3006587DF /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAA8B3001D436DA3006587DF /* MainViewController.swift */; };
+		CAA8B3031D436F0F006587DF /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAA8B3021D436F0F006587DF /* HomeViewController.swift */; };
+		CAA8B3051D436F41006587DF /* MessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAA8B3041D436F41006587DF /* MessageViewController.swift */; };
+		CAA8B3071D436F5B006587DF /* DiscoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAA8B3061D436F5B006587DF /* DiscoverViewController.swift */; };
+		CAA8B3091D436F6D006587DF /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAA8B3081D436F6D006587DF /* ProfileViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +52,11 @@
 		CAA8B2E71D43600B006587DF /* DSWeiBoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DSWeiBoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CAA8B2EB1D43600B006587DF /* DSWeiBoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DSWeiBoUITests.swift; sourceTree = "<group>"; };
 		CAA8B2ED1D43600B006587DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CAA8B3001D436DA3006587DF /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		CAA8B3021D436F0F006587DF /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		CAA8B3041D436F41006587DF /* MessageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageViewController.swift; sourceTree = "<group>"; };
+		CAA8B3061D436F5B006587DF /* DiscoverViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiscoverViewController.swift; sourceTree = "<group>"; };
+		CAA8B3081D436F6D006587DF /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,12 +139,12 @@
 		CAA8B2F91D4367E7006587DF /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				CAA8B2FA1D4367E7006587DF /* Compose(发微博) */,
-				CAA8B2FB1D4367E7006587DF /* Discover(发现) */,
-				CAA8B2FC1D4367E7006587DF /* Home(首页) */,
 				CAA8B2FD1D4367E7006587DF /* Main(主要) */,
+				CAA8B2FC1D4367E7006587DF /* Home(首页) */,
+				CAA8B2FB1D4367E7006587DF /* Discover(发现) */,
 				CAA8B2FE1D4367E7006587DF /* Message(消息) */,
 				CAA8B2FF1D4367E7006587DF /* Profile(我的) */,
+				CAA8B2FA1D4367E7006587DF /* Compose(发微博) */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -149,6 +159,7 @@
 		CAA8B2FB1D4367E7006587DF /* Discover(发现) */ = {
 			isa = PBXGroup;
 			children = (
+				CAA8B3061D436F5B006587DF /* DiscoverViewController.swift */,
 			);
 			path = "Discover(发现)";
 			sourceTree = "<group>";
@@ -156,6 +167,7 @@
 		CAA8B2FC1D4367E7006587DF /* Home(首页) */ = {
 			isa = PBXGroup;
 			children = (
+				CAA8B3021D436F0F006587DF /* HomeViewController.swift */,
 			);
 			path = "Home(首页)";
 			sourceTree = "<group>";
@@ -163,6 +175,7 @@
 		CAA8B2FD1D4367E7006587DF /* Main(主要) */ = {
 			isa = PBXGroup;
 			children = (
+				CAA8B3001D436DA3006587DF /* MainViewController.swift */,
 			);
 			path = "Main(主要)";
 			sourceTree = "<group>";
@@ -170,6 +183,7 @@
 		CAA8B2FE1D4367E7006587DF /* Message(消息) */ = {
 			isa = PBXGroup;
 			children = (
+				CAA8B3041D436F41006587DF /* MessageViewController.swift */,
 			);
 			path = "Message(消息)";
 			sourceTree = "<group>";
@@ -177,6 +191,7 @@
 		CAA8B2FF1D4367E7006587DF /* Profile(我的) */ = {
 			isa = PBXGroup;
 			children = (
+				CAA8B3081D436F6D006587DF /* ProfileViewController.swift */,
 			);
 			path = "Profile(我的)";
 			sourceTree = "<group>";
@@ -312,8 +327,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CAA8B3011D436DA3006587DF /* MainViewController.swift in Sources */,
 				CAA8B2CE1D43600B006587DF /* ViewController.swift in Sources */,
 				CAA8B2CC1D43600B006587DF /* AppDelegate.swift in Sources */,
+				CAA8B3071D436F5B006587DF /* DiscoverViewController.swift in Sources */,
+				CAA8B3091D436F6D006587DF /* ProfileViewController.swift in Sources */,
+				CAA8B3031D436F0F006587DF /* HomeViewController.swift in Sources */,
+				CAA8B3051D436F41006587DF /* MessageViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
