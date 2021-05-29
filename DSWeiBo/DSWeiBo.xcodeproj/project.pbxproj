@@ -19,6 +19,7 @@
 		CAA8B3051D436F41006587DF /* MessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAA8B3041D436F41006587DF /* MessageViewController.swift */; };
 		CAA8B3071D436F5B006587DF /* DiscoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAA8B3061D436F5B006587DF /* DiscoverViewController.swift */; };
 		CAA8B3091D436F6D006587DF /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAA8B3081D436F6D006587DF /* ProfileViewController.swift */; };
+		CAA8B30C1D43BB73006587DF /* MainVCSettings.json in Resources */ = {isa = PBXBuildFile; fileRef = CAA8B30B1D43BB73006587DF /* MainVCSettings.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,7 @@
 		CAA8B3041D436F41006587DF /* MessageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageViewController.swift; sourceTree = "<group>"; };
 		CAA8B3061D436F5B006587DF /* DiscoverViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiscoverViewController.swift; sourceTree = "<group>"; };
 		CAA8B3081D436F6D006587DF /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		CAA8B30B1D43BB73006587DF /* MainVCSettings.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = MainVCSettings.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -175,6 +177,7 @@
 		CAA8B2FD1D4367E7006587DF /* Main(主要) */ = {
 			isa = PBXGroup;
 			children = (
+				CAA8B30A1D43BB73006587DF /* Resource */,
 				CAA8B3001D436DA3006587DF /* MainViewController.swift */,
 			);
 			path = "Main(主要)";
@@ -194,6 +197,14 @@
 				CAA8B3081D436F6D006587DF /* ProfileViewController.swift */,
 			);
 			path = "Profile(我的)";
+			sourceTree = "<group>";
+		};
+		CAA8B30A1D43BB73006587DF /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				CAA8B30B1D43BB73006587DF /* MainVCSettings.json */,
+			);
+			path = Resource;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -302,6 +313,7 @@
 			files = (
 				CAA8B2D61D43600B006587DF /* LaunchScreen.storyboard in Resources */,
 				CAA8B2D31D43600B006587DF /* Assets.xcassets in Resources */,
+				CAA8B30C1D43BB73006587DF /* MainVCSettings.json in Resources */,
 				CAA8B2D11D43600B006587DF /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
