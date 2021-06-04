@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CA608FA41D447394001DC1A2 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA608FA21D447394001DC1A2 /* Home.storyboard */; };
+		CA608FA61D447407001DC1A2 /* Message.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA608FA51D447407001DC1A2 /* Message.storyboard */; };
+		CA608FA91D4474FC001DC1A2 /* Discover.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA608FA71D4474FC001DC1A2 /* Discover.storyboard */; };
+		CA608FAB1D447541001DC1A2 /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA608FAA1D447541001DC1A2 /* Profile.storyboard */; };
 		CAA8B2CC1D43600B006587DF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAA8B2CB1D43600B006587DF /* AppDelegate.swift */; };
 		CAA8B2CE1D43600B006587DF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAA8B2CD1D43600B006587DF /* ViewController.swift */; };
 		CAA8B2D11D43600B006587DF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CAA8B2CF1D43600B006587DF /* Main.storyboard */; };
@@ -40,6 +44,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CA608FA31D447394001DC1A2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Home.storyboard; sourceTree = "<group>"; };
+		CA608FA51D447407001DC1A2 /* Message.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Message.storyboard; path = ../../Message.storyboard; sourceTree = "<group>"; };
+		CA608FA81D4474FC001DC1A2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Discover.storyboard; sourceTree = "<group>"; };
+		CA608FAA1D447541001DC1A2 /* Profile.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Profile.storyboard; path = ../../Profile.storyboard; sourceTree = "<group>"; };
 		CAA8B2C81D43600A006587DF /* DSWeiBo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DSWeiBo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CAA8B2CB1D43600B006587DF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CAA8B2CD1D43600B006587DF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -161,6 +169,7 @@
 		CAA8B2FB1D4367E7006587DF /* Discover(发现) */ = {
 			isa = PBXGroup;
 			children = (
+				CA608FA71D4474FC001DC1A2 /* Discover.storyboard */,
 				CAA8B3061D436F5B006587DF /* DiscoverViewController.swift */,
 			);
 			path = "Discover(发现)";
@@ -169,6 +178,7 @@
 		CAA8B2FC1D4367E7006587DF /* Home(首页) */ = {
 			isa = PBXGroup;
 			children = (
+				CA608FA21D447394001DC1A2 /* Home.storyboard */,
 				CAA8B3021D436F0F006587DF /* HomeViewController.swift */,
 			);
 			path = "Home(首页)";
@@ -186,6 +196,7 @@
 		CAA8B2FE1D4367E7006587DF /* Message(消息) */ = {
 			isa = PBXGroup;
 			children = (
+				CA608FA51D447407001DC1A2 /* Message.storyboard */,
 				CAA8B3041D436F41006587DF /* MessageViewController.swift */,
 			);
 			path = "Message(消息)";
@@ -194,6 +205,7 @@
 		CAA8B2FF1D4367E7006587DF /* Profile(我的) */ = {
 			isa = PBXGroup;
 			children = (
+				CA608FAA1D447541001DC1A2 /* Profile.storyboard */,
 				CAA8B3081D436F6D006587DF /* ProfileViewController.swift */,
 			);
 			path = "Profile(我的)";
@@ -312,8 +324,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				CAA8B2D61D43600B006587DF /* LaunchScreen.storyboard in Resources */,
+				CA608FA41D447394001DC1A2 /* Home.storyboard in Resources */,
+				CA608FAB1D447541001DC1A2 /* Profile.storyboard in Resources */,
 				CAA8B2D31D43600B006587DF /* Assets.xcassets in Resources */,
 				CAA8B30C1D43BB73006587DF /* MainVCSettings.json in Resources */,
+				CA608FA61D447407001DC1A2 /* Message.storyboard in Resources */,
+				CA608FA91D4474FC001DC1A2 /* Discover.storyboard in Resources */,
 				CAA8B2D11D43600B006587DF /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -381,6 +397,24 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		CA608FA21D447394001DC1A2 /* Home.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CA608FA31D447394001DC1A2 /* Base */,
+			);
+			name = Home.storyboard;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		CA608FA71D4474FC001DC1A2 /* Discover.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CA608FA81D4474FC001DC1A2 /* Base */,
+			);
+			name = Discover.storyboard;
+			path = ../..;
+			sourceTree = "<group>";
+		};
 		CAA8B2CF1D43600B006587DF /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

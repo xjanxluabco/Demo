@@ -11,6 +11,10 @@ import UIKit
 class MainViewController: UITabBarController {
     override func viewDidLoad() {
         super.viewDidLoad()
+    }
+    /*
+    override func viewDidLoad() {
+        super.viewDidLoad()
 //        addChildViewController("HomeViewController", title: "首页", imageName: "tabbar_home")
 //        addChildViewController("MessageViewController", title: "消息", imageName: "tabbar_message_center")
 //        addChildViewController("DiscoverViewController", title: "发现", imageName: "tabbar_discover")
@@ -98,4 +102,5 @@ class MainViewController: UITabBarController {
         let childNav = UINavigationController(rootViewController: childVc)
         addChildViewController(childNav)
     }
+ **/
 }
