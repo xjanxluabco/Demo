@@ -9,9 +9,24 @@
 import UIKit
 
 class MainViewController: UITabBarController {
+    // MARK:- 系统回调函数
     override func viewDidLoad() {
         super.viewDidLoad()
+        setupComposeBtn()
     }
+    
+    
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+        setupTabbarItems()
+    }
+    // MARK:- 懒加载属性
+    private lazy var imageNames = ["tabbar_home", "tabbar_message_center", "", "tabbar_discover", "tabbar_profile"]
+    private lazy var composeBtn : UIButton = {
+//        let composeBtn = UIButton.creatButtonWith("tabbar_compose_icon_add", bgImageName: "tabbar_compose_button")
+        let composeBtn = UIButton.init(imageName: "tabbar_compose_icon_add", bgImageName: "tabbar_compose_button")
+        return  composeBtn
+    }()
     /*
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -103,4 +118,53 @@ class MainViewController: UITabBarController {
         addChildViewController(childNav)
     }
  **/
+}
+// MARK: - 设置UI
+extension MainViewController {
+    private func setupTabbarItems() {
+        // 1.遍历所有的item
+        for i in 0..<tabBar.items!.count {
+            // 2.获取item
+            let item = tabBar.items![i]
+            
+            // 3.如果是下标值为2,则该item不可以和用户交互
+            if i == 2 {
+                item.enabled = false
+                continue
+            }
+            
+            // 4.设置其他item的选中时候的图片
+            item.selectedImage = UIImage(named: imageNames[i] + "_highlighted")
+        }
+    }
+    private func setupComposeBtn() {
+        // 1.将composeBtn添加到tabbar中
+        tabBar.addSubview(composeBtn)
+        
+        // 2.设置属性
+        //        composeBtn.setBackgroundImage(UIImage(named: "tabbar_compose_button"), forState: .Normal)
+        //        composeBtn.setBackgroundImage(UIImage(named: "tabbar_compose_button_highlighted"), forState: .Highlighted)
+        //        composeBtn.setImage(UIImage(named: "tabbar_compose_icon_add"), forState: .Normal)
+        //        composeBtn.setImage(UIImage(named: "tabbar_compose_icon_add_highlighted"), forState: .Highlighted)
+        //        composeBtn.sizeToFit()
+        
+        // 3.设置位置
+        composeBtn.center = CGPointMake(tabBar.center.x, tabBar.bounds.size.height * 0.5)
+        // 点击
+        composeBtn.addTarget(self, action: #selector(MainViewController.composeButtonClick), forControlEvents: .TouchUpInside)
+    }
+}
+// MARK: - 事件点击
+extension MainViewController {
+    // 事件监听本质发送消息.但是发送消息是OC的特性
+    // 将方法包装成@SEL --> 类中查找方法列表 --> 根据@SEL找到imp指针(函数指针) --> 执行函数
+    // 如果swift中将一个函数声明称private,那么该函数不会被添加到方法列表中
+    // 如果在private前面加上@objc,那么该方法依然会被添加到方法列表中
+//    @objc private func composeButtonClick() {
+//        print("composeButtonClick")
+//    }
+    func composeButtonClick() {
+        print("composeButtonClick")
+    }
+
 }
