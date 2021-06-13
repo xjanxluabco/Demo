@@ -12,6 +12,9 @@
 		CA608FA91D4474FC001DC1A2 /* Discover.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA608FA71D4474FC001DC1A2 /* Discover.storyboard */; };
 		CA608FAB1D447541001DC1A2 /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA608FAA1D447541001DC1A2 /* Profile.storyboard */; };
 		CA608FAF1D44B4E4001DC1A2 /* UIButton+Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA608FAE1D44B4E4001DC1A2 /* UIButton+Category.swift */; };
+		CA608FB11D44EE05001DC1A2 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA608FB01D44EE05001DC1A2 /* BaseViewController.swift */; };
+		CA608FB71D44F979001DC1A2 /* VisitorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA608FB61D44F979001DC1A2 /* VisitorView.swift */; };
+		CA608FB91D44F9B0001DC1A2 /* VisitorView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CA608FB81D44F9B0001DC1A2 /* VisitorView.xib */; };
 		CAA8B2CC1D43600B006587DF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAA8B2CB1D43600B006587DF /* AppDelegate.swift */; };
 		CAA8B2D11D43600B006587DF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CAA8B2CF1D43600B006587DF /* Main.storyboard */; };
 		CAA8B2D31D43600B006587DF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CAA8B2D21D43600B006587DF /* Assets.xcassets */; };
@@ -49,6 +52,9 @@
 		CA608FA81D4474FC001DC1A2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Discover.storyboard; sourceTree = "<group>"; };
 		CA608FAA1D447541001DC1A2 /* Profile.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Profile.storyboard; path = ../../Profile.storyboard; sourceTree = "<group>"; };
 		CA608FAE1D44B4E4001DC1A2 /* UIButton+Category.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIButton+Category.swift"; sourceTree = "<group>"; };
+		CA608FB01D44EE05001DC1A2 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		CA608FB61D44F979001DC1A2 /* VisitorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VisitorView.swift; sourceTree = "<group>"; };
+		CA608FB81D44F9B0001DC1A2 /* VisitorView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VisitorView.xib; sourceTree = "<group>"; };
 		CAA8B2C81D43600A006587DF /* DSWeiBo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DSWeiBo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CAA8B2CB1D43600B006587DF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CAA8B2D01D43600B006587DF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -99,7 +105,8 @@
 			children = (
 				CA608FAD1D44B3A3001DC1A2 /* Category */,
 			);
-			path = "Tool(工具)";
+			name = "Tool(工具)";
+			path = "Main(主要)/Tool(工具)";
 			sourceTree = "<group>";
 		};
 		CA608FAD1D44B3A3001DC1A2 /* Category */ = {
@@ -164,6 +171,7 @@
 		CAA8B2F91D4367E7006587DF /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				CA608FAC1D44B2D7001DC1A2 /* Tool(工具) */,
 				CAA8B2FD1D4367E7006587DF /* Main(主要) */,
 				CAA8B2FC1D4367E7006587DF /* Home(首页) */,
 				CAA8B2FB1D4367E7006587DF /* Discover(发现) */,
@@ -202,9 +210,11 @@
 		CAA8B2FD1D4367E7006587DF /* Main(主要) */ = {
 			isa = PBXGroup;
 			children = (
-				CA608FAC1D44B2D7001DC1A2 /* Tool(工具) */,
 				CAA8B30A1D43BB73006587DF /* Resource */,
 				CAA8B3001D436DA3006587DF /* MainViewController.swift */,
+				CA608FB01D44EE05001DC1A2 /* BaseViewController.swift */,
+				CA608FB61D44F979001DC1A2 /* VisitorView.swift */,
+				CA608FB81D44F9B0001DC1A2 /* VisitorView.xib */,
 			);
 			path = "Main(主要)";
 			sourceTree = "<group>";
@@ -347,6 +357,7 @@
 				CA608FA61D447407001DC1A2 /* Message.storyboard in Resources */,
 				CA608FA91D4474FC001DC1A2 /* Discover.storyboard in Resources */,
 				CAA8B2D11D43600B006587DF /* Main.storyboard in Resources */,
+				CA608FB91D44F9B0001DC1A2 /* VisitorView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -376,6 +387,8 @@
 				CAA8B2CC1D43600B006587DF /* AppDelegate.swift in Sources */,
 				CAA8B3071D436F5B006587DF /* DiscoverViewController.swift in Sources */,
 				CAA8B3091D436F6D006587DF /* ProfileViewController.swift in Sources */,
+				CA608FB11D44EE05001DC1A2 /* BaseViewController.swift in Sources */,
+				CA608FB71D44F979001DC1A2 /* VisitorView.swift in Sources */,
 				CAA8B3031D436F0F006587DF /* HomeViewController.swift in Sources */,
 				CAA8B3051D436F41006587DF /* MessageViewController.swift in Sources */,
 			);

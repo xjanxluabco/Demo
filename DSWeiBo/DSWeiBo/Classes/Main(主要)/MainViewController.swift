@@ -164,7 +164,6 @@ extension MainViewController {
 //        print("composeButtonClick")
 //    }
     func composeButtonClick() {
-        print("composeButtonClick")
     }
 
 }
