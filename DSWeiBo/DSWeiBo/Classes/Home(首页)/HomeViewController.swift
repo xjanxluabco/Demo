@@ -9,5 +9,9 @@
 import UIKit
 
 class HomeViewController: BaseViewController {
-
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        // 加载动画
+        visitorView.addRotationAnmianl()
+    }
 }

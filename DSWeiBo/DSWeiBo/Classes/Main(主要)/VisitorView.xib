@@ -14,22 +14,25 @@
                     <rect key="frame" x="213" y="153" width="175" height="175"/>
                 </imageView>
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="visitordiscover_feed_mask_smallicon" translatesAutoresizingMaskIntoConstraints="NO" id="T7I-Rf-Jc0">
-                    <rect key="frame" x="0.0" y="0.0" width="600" height="400"/>
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="450"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="400" id="I30-vg-uvC"/>
+                        <constraint firstAttribute="height" constant="450" id="I30-vg-uvC"/>
                     </constraints>
                 </imageView>
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="visitordiscover_feed_image_house" translatesAutoresizingMaskIntoConstraints="NO" id="daT-gU-gVI">
                     <rect key="frame" x="253" y="220" width="94" height="90"/>
                 </imageView>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="关注一些人，回这里看看有什么惊喜" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L3h-Wl-DaV">
-                    <rect key="frame" x="188" y="420" width="224" height="17"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="关注一些人，回这里看看有什么惊喜" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L3h-Wl-DaV">
+                    <rect key="frame" x="178" y="470" width="245" height="17"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="245" id="9sw-N1-THX"/>
+                    </constraints>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jvc-CP-dmw">
-                    <rect key="frame" x="188" y="467" width="55" height="32"/>
+                    <rect key="frame" x="178" y="517" width="55" height="32"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="55" id="C9X-lm-HU0"/>
                         <constraint firstAttribute="height" constant="32" id="cwb-pb-2dd"/>
@@ -39,7 +42,7 @@
                     </state>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vPy-dM-RjR">
-                    <rect key="frame" x="357" y="467" width="55" height="32"/>
+                    <rect key="frame" x="368" y="517" width="55" height="32"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="55" id="4gt-eg-1dv"/>
                         <constraint firstAttribute="height" constant="32" id="hIG-iV-f9M"/>
@@ -67,6 +70,13 @@
             </constraints>
             <nil key="simulatedStatusBarMetrics"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="iconImageView" destination="daT-gU-gVI" id="J0v-po-jcD"/>
+                <outlet property="loginButton" destination="vPy-dM-RjR" id="BnR-9x-unV"/>
+                <outlet property="messageLabel" destination="L3h-Wl-DaV" id="Y23-0X-h4G"/>
+                <outlet property="registerButton" destination="Jvc-CP-dmw" id="yqu-ga-IrP"/>
+                <outlet property="rotationView" destination="3qN-9v-rbw" id="KFa-vy-ctb"/>
+            </connections>
             <point key="canvasLocation" x="790" y="400"/>
         </view>
     </objects>
